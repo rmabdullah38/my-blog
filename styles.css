@@ -189,3 +189,30 @@ max-width: 560px; /* Maximum width of each video */
         width: 100%; /* Full width on smaller screens */
     }
 }
+
+/* for iphone */
+@media (max-width: 768px) {
+    .navbar a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .left, .right {
+        flex-basis: 100%;
+    }
+
+    .navbar a {
+        float: none;
+    }
+
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
