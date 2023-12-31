@@ -5,36 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ronny Abdullah</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>RONNY ABDULLAH</h1>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h1>RONNY ABDULLAH</h1>
+        </a>
     </header>
     <nav class="navbar">
         <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
+        <div class="dropdown">
+            <a href="projects.html">Projects</a>
+            <div class="dropdown-content">
+                <a href="projects.html#ee-projects">EE Projects</a>
+                <a href="projects.html#cs-projects">CS Projects</a>
+                <a href="projects.html#other-projects">Other Projects</a>
+            </div>
+        </div>  
         <a href="books.html">Books</a>
         <a href="research.html">Research</a>
         <a href="consulting.html">Consulting</a>
         <a href="aboutme.html">About Me</a>
         <!-- Social media links added right next to the navigation links -->
-        <a href="https://www.instagram.com/" style="float: right;" target="_blank">Instagram</a>
-        <a href="https://www.linkedin.com/in/rmabdullah/" style="float: right;" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com/RonnyAbdullah3" style="float: right;" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/" style="float: right;" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/rmabdullah/" style="float: right;" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/RonnyAbdullah3" style="float: right;" target="_blank"><i class="fab fa-twitter"></i></a>   
     </nav>
 
-    <section id="homepage" class="content">
+    <section id="ee-projects" class="content">
         <div class="left">
-            <h2>PROJECTS</h2>
+            <h2>EE PROJECTS</h2>
+            <div class="video-section">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y-BTyZGa6fw" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="#" onclick="openModal('eeModal')"><h3>EE Project Title</h3></a>                    
+                </div>
+                <div id="eeModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('eeModal')">&times;</span>
+                        <p>Details about the EE project...</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="video-section">
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/KFtNC9dRlHg" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/y-BTyZGa6fw" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section id="cs-projects" class="content">
+        <div class="left">
+            <h2>CS PROJECTS</h2>
+            <div class="video-section">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KFtNC9dRlHg" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="#" onclick="openModal('csModal1')"><h3>CS Project 1 Title</h3></a>
+                </div>
+                <div id="csModal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('csModal1')">&times;</span>
+                        <p>Details about CS Project 1...</p>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y-BTyZGa6fw" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="#" onclick="openModal('csModal2')"><h3>CS Project 2 Title</h3></a>
+                </div>
+                <div id="csModal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('csModal2')">&times;</span>
+                        <p>Details about CS Project 2...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="other-projects" class="content">
+        <div class="left">
+            <h2>OTHER PROJECTS</h2>
+            <div class="video-section">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KFtNC9dRlHg" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="#" onclick="openModal('otherModal1')"><h3>Other Project 1 Title</h3></a>
+                </div>
+                <div id="otherModal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('otherModal1')">&times;</span>
+                        <p>Details about Other Project 1...</p>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y-BTyZGa6fw" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="#" onclick="openModal('otherModal2')"><h3>Other Project 2 Title</h3></a>
+                </div>
+                <div id="otherModal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('otherModal2')">&times;</span>
+                        <p>Details about Other Project 2...</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
 </body>
 </html>

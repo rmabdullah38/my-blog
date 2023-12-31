@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ronny Abdullah</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>RONNY ABDULLAH</h1>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h1>RONNY ABDULLAH</h1>
+        </a>
     </header>
     <nav class="navbar">
         <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
+        <div class="dropdown">
+            <a href="projects.html">Projects</a>
+            <div class="dropdown-content">
+                <a href="projects.html#ee-projects">EE Projects</a>
+                <a href="projects.html#cs-projects">CS Projects</a>
+                <a href="projects.html#other-projects">Other Projects</a>
+                <!-- more project links -->
+            </div>
+        </div>  
         <a href="books.html">Books</a>
         <a href="research.html">Research</a>
         <a href="consulting.html">Consulting</a>
         <a href="aboutme.html">About Me</a>
         <!-- Social media links added right next to the navigation links -->
-        <a href="https://www.instagram.com/" style="float: right;" target="_blank">Instagram</a>
-        <a href="https://www.linkedin.com/in/rmabdullah/" style="float: right;" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com/RonnyAbdullah3" style="float: right;" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/" style="float: right;" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/rmabdullah/" style="float: right;" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/RonnyAbdullah3" style="float: right;" target="_blank"><i class="fab fa-twitter"></i></a>   
     </nav>
             <section class="book-reviews">
     <h2>Book Reviews</h2>
